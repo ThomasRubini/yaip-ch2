@@ -14,7 +14,7 @@ public class Line {
 
     @Override
     public String toString() {
-        return "Line";
+        return "Line(%s,%s)".formatted(begin, end);
     }
 
     public Point getBegin() {
@@ -82,7 +82,10 @@ public class Line {
     }
 
     public double getGradient(){
-        return Math.atan2(yDi)
+        int xDiff = end.getX()-begin.getX();
+        int yDiff = end.getY()-begin.getY();
+
+        return Math.atan2(yDiff, xDiff);
     }
 
 }

@@ -1,6 +1,7 @@
 # IntelliJ files
 *.iml
 .idea
+out
 
 # Eclipse files
 bin
