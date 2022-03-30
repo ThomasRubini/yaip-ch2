@@ -28,5 +28,7 @@ public class TestCylinder {  // save as "TestCylinder.java"
 				+ " height=" + c3.getHeight()
 				+ " base area=" + c3.getArea()
 				+ " volume=" + c3.getVolume());
+
+		System.out.println(c3);
 	}
 }

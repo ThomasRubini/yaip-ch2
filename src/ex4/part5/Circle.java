@@ -1,20 +1,20 @@
-package ex4.part1;
+package ex4.part5;
 
-public class Circle {
+public class Circle extends Shape {
 	private double radius;
-	private String color;
 
 	public Circle(){
 		this(1.0);
 	}
 
 	public Circle(double radius){
-		this(radius, "red");
+		super();
+		this.radius = radius;
 	}
 
-	public Circle(double radius, String color){
+	public Circle(double radius, String color, boolean filled){
+		super(color, filled);
 		this.radius = radius;
-		this.color = color;
 	}
 
 	public double getRadius() {
@@ -25,20 +25,16 @@ public class Circle {
 		this.radius = radius;
 	}
 
-	public String getColor() {
-		return color;
-	}
-
-	public void setColor(String color) {
-		this.color = color;
-	}
-
 	public double getArea(){
 		return Math.PI*radius*radius;
 	}
 
+	public double getPerimeter(){
+		return 2*Math.PI*radius;
+	}
+
 	@Override
 	public String toString() {
-		return "Circle[radius=%s,color=%s]".formatted(radius, color);
+		return "Circle[%s,radius=%s]".formatted(super.toString(), radius);
 	}
 }

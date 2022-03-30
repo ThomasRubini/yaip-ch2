@@ -33,4 +33,9 @@ public class Cylinder extends Circle {
 		return getArea()*height;
 	}
 
+
+	@Override
+	public String toString() {
+		return "Cylinder: subclass of %s height=%s".formatted(super.toString(), height);
+	}
 }
