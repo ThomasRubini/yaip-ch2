@@ -8,9 +8,17 @@ public class MyTime {
 	}
 
 	public MyTime(int hour, int minute, int second){
-		this.hour = hour;
-		this.minute = minute;
-		this.second = second;
+		setTime(hour, minute, second);
+	}
+
+	private void validate(int n, int upperBound){
+		if(n<0||n>upperBound)throw new IllegalArgumentException("Invalid hour, minute, or second!");
+	}
+
+	public void setTime(int hour, int minute, int second){
+		setHour(hour);
+		setMinute(minute);
+		setSecond(second);
 	}
 
 	public int getHour() {
@@ -25,9 +33,6 @@ public class MyTime {
 		return second;
 	}
 
-	private void validate(int n, int upperBound){
-		if(n<0||n>upperBound)throw new IllegalArgumentException("Invalid hour, minute, or second!");
-	}
 
 	public void setHour(int hour) {
 		validate(hour, 23);
