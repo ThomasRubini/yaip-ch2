@@ -1,7 +1,5 @@
 package ex4.part3;
 
-import ex5.part1.Point;
-
 public class Point2D {
 	private float x, y;
 

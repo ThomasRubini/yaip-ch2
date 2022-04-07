@@ -1,6 +1,7 @@
 package ex7.part2;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class TestPolyLine {
 	public static void main(String[] args) {
@@ -15,7 +16,7 @@ public class TestPolyLine {
 		System.out.println(l1);  // {(1,2)(3,4)(5,6)}
 
 		// Test constructor 2
-		List<Point> points = new ArrayList<Point>();
+		List<Point> points = new ArrayList<>();
 		points.add(new Point(11, 12));
 		points.add(new Point(13, 14));
 		PolyLine l2 = new PolyLine(points);

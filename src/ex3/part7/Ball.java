@@ -1,7 +1,5 @@
 package ex3.part7;
 
-import java.util.List;
-
 public class Ball {
 	private float x, y, z;
 

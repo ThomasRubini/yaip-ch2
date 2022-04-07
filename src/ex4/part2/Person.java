@@ -1,7 +1,5 @@
 package ex4.part2;
 
-import javax.swing.*;
-
 public class Person {
 	private final String name;
 	private String address;

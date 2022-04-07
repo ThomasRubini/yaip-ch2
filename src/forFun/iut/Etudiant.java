@@ -24,7 +24,7 @@ public class Etudiant extends Personne {
     public int getHours(){
         int total = 0;
         for(Module m : modules){
-            total += m.gethParSemaines();
+            total += m.getHParSemaine();
         }
         return total;
     }

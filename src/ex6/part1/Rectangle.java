@@ -1,7 +1,5 @@
 package ex6.part1;
 
-import org.w3c.dom.css.Rect;
-
 public class Rectangle extends Shape {
 	private double width, length;
 
